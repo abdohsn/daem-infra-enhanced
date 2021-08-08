@@ -1,4 +1,4 @@
-resource "aws_alb" "application_load_balancer" {
+resource "aws_alb" "mongo_load_balancer" {
   name               = "db-lb-tf" # Naming our load balancer
   load_balancer_type = "network"
   subnets = [ # Referencing the default subnets
