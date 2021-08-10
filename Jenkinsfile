@@ -16,7 +16,7 @@ pipeline{
     stages{
         stage('Git Checkout'){
             steps{
-                git branch: 'ecs-mongo-lb', credentialsId: 'git-ssh', url: 'git@github.com:abdohsn/daem-infra-enhanced.git'
+                git branch: 'app-load-balancer', credentialsId: 'git-ssh', url: 'git@github.com:abdohsn/daem-infra-enhanced.git'
             }
         }
         stage('Terraform Init'){
