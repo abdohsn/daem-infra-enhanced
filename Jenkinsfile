@@ -32,6 +32,7 @@ pipeline{
             }
             steps{
                 sh 'terraform apply --auto-approve'
+                echo "Hello"
             }
         }
         stage('Terraform Destroy'){
